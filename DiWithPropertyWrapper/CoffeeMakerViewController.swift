@@ -14,6 +14,7 @@ class CoffeeMakerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewModel.registerCustomer()
         viewModel.makeCoffee()
     }
 

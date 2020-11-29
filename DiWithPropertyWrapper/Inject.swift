@@ -6,7 +6,7 @@
 //
 
 @propertyWrapper
-struct Inject<T: Component> {
+struct Inject<T: Dependency> {
     var component: T
     
     init() {

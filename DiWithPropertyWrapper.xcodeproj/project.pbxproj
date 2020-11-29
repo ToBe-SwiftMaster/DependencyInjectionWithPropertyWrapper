@@ -13,10 +13,11 @@
 		CA70503825734E800036B4FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA70503625734E800036B4FB /* Main.storyboard */; };
 		CA70503A25734E810036B4FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA70503925734E810036B4FB /* Assets.xcassets */; };
 		CA70503D25734E810036B4FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA70503B25734E810036B4FB /* LaunchScreen.storyboard */; };
-		CA70504625734E960036B4FB /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70504525734E960036B4FB /* Component.swift */; };
+		CA70504625734E960036B4FB /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70504525734E960036B4FB /* Components.swift */; };
 		CA70504925734EDA0036B4FB /* CoffeeMakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70504825734EDA0036B4FB /* CoffeeMakerViewModel.swift */; };
 		CA70504D25734EFF0036B4FB /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70504C25734EFF0036B4FB /* Resolver.swift */; };
 		CA70505025734F150036B4FB /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70504F25734F150036B4FB /* Inject.swift */; };
+		CA705053257357400036B4FB /* DiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA705052257357400036B4FB /* DiContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +29,11 @@
 		CA70503925734E810036B4FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA70503C25734E810036B4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA70503E25734E810036B4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA70504525734E960036B4FB /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		CA70504525734E960036B4FB /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		CA70504825734EDA0036B4FB /* CoffeeMakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMakerViewModel.swift; sourceTree = "<group>"; };
 		CA70504C25734EFF0036B4FB /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		CA70504F25734F150036B4FB /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
+		CA705052257357400036B4FB /* DiContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				CA70503025734E800036B4FB /* AppDelegate.swift */,
+				CA705052257357400036B4FB /* DiContainer.swift */,
 				CA70503225734E800036B4FB /* SceneDelegate.swift */,
 				CA70503425734E800036B4FB /* CoffeeMakerViewController.swift */,
-				CA70504525734E960036B4FB /* Component.swift */,
+				CA70504525734E960036B4FB /* Components.swift */,
 				CA70504825734EDA0036B4FB /* CoffeeMakerViewModel.swift */,
 				CA70504F25734F150036B4FB /* Inject.swift */,
 				CA70504C25734EFF0036B4FB /* Resolver.swift */,
@@ -151,8 +154,9 @@
 			files = (
 				CA70505025734F150036B4FB /* Inject.swift in Sources */,
 				CA70503525734E800036B4FB /* CoffeeMakerViewController.swift in Sources */,
-				CA70504625734E960036B4FB /* Component.swift in Sources */,
+				CA70504625734E960036B4FB /* Components.swift in Sources */,
 				CA70503125734E800036B4FB /* AppDelegate.swift in Sources */,
+				CA705053257357400036B4FB /* DiContainer.swift in Sources */,
 				CA70504D25734EFF0036B4FB /* Resolver.swift in Sources */,
 				CA70503325734E800036B4FB /* SceneDelegate.swift in Sources */,
 				CA70504925734EDA0036B4FB /* CoffeeMakerViewModel.swift in Sources */,

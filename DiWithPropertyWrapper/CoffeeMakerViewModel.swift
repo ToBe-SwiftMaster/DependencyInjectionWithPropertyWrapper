@@ -8,11 +8,22 @@
 class CoffeeMakerViewModel {
     @Inject var heater: ElectricHeater
     @Inject var pump: Pump
+    @Inject var apiService: CustomerApiService
     
     func makeCoffee() {
-        self.heater.serve()
-        self.pump.serve()
+        
+        heater.serve()
+        pump.serve()
         
         print("Making Coffee!")
     }
+
+    func registerCustomer() {
+        
+        apiService.fetch()
+        apiService.insert()
+        
+        print("Resgistering New Customer!")
+    }
 }
+
