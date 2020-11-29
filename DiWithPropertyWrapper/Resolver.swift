@@ -9,15 +9,12 @@ class Resolver {
     private(set) static var shared = Resolver()
     var factoryDict: [String: () -> Component] = [:]
     
-    func add(type: Component.Type, _ factory: @escaping () -> Component) {
-        factoryDict[String(describing: type.self)] = factory
+    func add<T: Component>(_ factory: @escaping () -> T) {
+        factoryDict[String(describing: T.self)] = factory
     }
     
-    func resolve<Component>(_ type: Component.Type) -> Component {
-        guard let component: Component = factoryDict[String(describing: type.self)]?() as? Component else {
-            fatalError("You didn't add \(type) component.")
-        }
-        
-        return component
+    func resolve<T: Component>(_ type: T.Type) -> T {
+        return factoryDict[String(describing: type)]!() as! T
     }
 }
+

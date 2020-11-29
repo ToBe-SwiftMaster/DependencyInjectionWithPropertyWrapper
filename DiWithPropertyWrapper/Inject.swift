@@ -6,14 +6,14 @@
 //
 
 @propertyWrapper
-struct Inject<Component> {
-    var component: Component
+struct Inject<T: Component> {
+    var component: T
     
     init() {
-        self.component = Resolver.shared.resolve(Component.self)
+        self.component = Resolver.shared.resolve(T.self)
     }
     
-    var wrappedValue: Component {
+    var wrappedValue: T {
         get {
             return component
         }
