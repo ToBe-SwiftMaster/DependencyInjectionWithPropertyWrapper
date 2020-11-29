@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Resolver.shared.add { ElectricHeater() }
         Resolver.shared.add { Pump() }
         
-        return truezz
+        return true
     }
 
     // MARK: UISceneSession Lifecycle
