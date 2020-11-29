@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CoffeeMakerViewController: UIViewController {
 
+    let viewModel = CoffeeMakerViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        viewModel.makeCoffee()
     }
 
 

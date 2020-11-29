@@ -14,6 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        Resolver.shared.add(type: ElectricHeater.self, { ElectricHeater() })
+        Resolver.shared.add(type: Pump.self, { Pump() })
+        
         return true
     }
 

@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		CA70503125734E800036B4FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70503025734E800036B4FB /* AppDelegate.swift */; };
 		CA70503325734E800036B4FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70503225734E800036B4FB /* SceneDelegate.swift */; };
-		CA70503525734E800036B4FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70503425734E800036B4FB /* ViewController.swift */; };
+		CA70503525734E800036B4FB /* CoffeeMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70503425734E800036B4FB /* CoffeeMakerViewController.swift */; };
 		CA70503825734E800036B4FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA70503625734E800036B4FB /* Main.storyboard */; };
 		CA70503A25734E810036B4FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA70503925734E810036B4FB /* Assets.xcassets */; };
 		CA70503D25734E810036B4FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA70503B25734E810036B4FB /* LaunchScreen.storyboard */; };
+		CA70504625734E960036B4FB /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70504525734E960036B4FB /* Component.swift */; };
+		CA70504925734EDA0036B4FB /* CoffeeMakerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70504825734EDA0036B4FB /* CoffeeMakerViewModel.swift */; };
+		CA70504D25734EFF0036B4FB /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70504C25734EFF0036B4FB /* Resolver.swift */; };
+		CA70505025734F150036B4FB /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70504F25734F150036B4FB /* Inject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA70502D25734E800036B4FB /* DiWithPropertyWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiWithPropertyWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA70503025734E800036B4FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA70503225734E800036B4FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA70503425734E800036B4FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA70503425734E800036B4FB /* CoffeeMakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMakerViewController.swift; sourceTree = "<group>"; };
 		CA70503725734E800036B4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA70503925734E810036B4FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA70503C25734E810036B4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA70503E25734E810036B4FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA70504525734E960036B4FB /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
+		CA70504825734EDA0036B4FB /* CoffeeMakerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMakerViewModel.swift; sourceTree = "<group>"; };
+		CA70504C25734EFF0036B4FB /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
+		CA70504F25734F150036B4FB /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,11 @@
 			children = (
 				CA70503025734E800036B4FB /* AppDelegate.swift */,
 				CA70503225734E800036B4FB /* SceneDelegate.swift */,
-				CA70503425734E800036B4FB /* ViewController.swift */,
+				CA70503425734E800036B4FB /* CoffeeMakerViewController.swift */,
+				CA70504525734E960036B4FB /* Component.swift */,
+				CA70504825734EDA0036B4FB /* CoffeeMakerViewModel.swift */,
+				CA70504F25734F150036B4FB /* Inject.swift */,
+				CA70504C25734EFF0036B4FB /* Resolver.swift */,
 				CA70503625734E800036B4FB /* Main.storyboard */,
 				CA70503925734E810036B4FB /* Assets.xcassets */,
 				CA70503B25734E810036B4FB /* LaunchScreen.storyboard */,
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA70503525734E800036B4FB /* ViewController.swift in Sources */,
+				CA70505025734F150036B4FB /* Inject.swift in Sources */,
+				CA70503525734E800036B4FB /* CoffeeMakerViewController.swift in Sources */,
+				CA70504625734E960036B4FB /* Component.swift in Sources */,
 				CA70503125734E800036B4FB /* AppDelegate.swift in Sources */,
+				CA70504D25734EFF0036B4FB /* Resolver.swift in Sources */,
 				CA70503325734E800036B4FB /* SceneDelegate.swift in Sources */,
+				CA70504925734EDA0036B4FB /* CoffeeMakerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
