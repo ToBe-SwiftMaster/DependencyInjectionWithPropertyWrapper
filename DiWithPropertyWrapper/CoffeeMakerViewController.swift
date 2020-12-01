@@ -7,16 +7,38 @@
 
 import UIKit
 
-class CoffeeMakerViewController: UIViewController {
+//protocol CoffeeMakerViewControllerType: Dependency {
+//    func next(item: Int)
+//}
 
-    let viewModel = CoffeeMakerViewModel()
+class CoffeeMakerViewController: UIViewController {
+    
+    @Inject var viewModel: CoffeeMakerViewModel
+    var closure: ((Int) -> Void)?
+
+//    let viewModel = CoffeeMakerViewModel()
+    
+    static func create(closure: @escaping (Int) -> Void) -> CoffeeMakerViewController {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CoffeeMakerViewController") as! CoffeeMakerViewController
+        vc.closure = closure
+        return vc
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel.registerCustomer()
-        viewModel.makeCoffee()
+
     }
+ 
+    
+    @IBAction func button(_ sender: Any) {
+        viewModel.fetch(completion: { item in
+            self.closure?(item)
+        })
+    }
+    
+    
+    
 
 
 }

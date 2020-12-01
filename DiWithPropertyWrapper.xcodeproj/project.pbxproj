@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CA70503125734E800036B4FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70503025734E800036B4FB /* AppDelegate.swift */; };
-		CA70503325734E800036B4FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70503225734E800036B4FB /* SceneDelegate.swift */; };
 		CA70503525734E800036B4FB /* CoffeeMakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70503425734E800036B4FB /* CoffeeMakerViewController.swift */; };
 		CA70503825734E800036B4FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA70503625734E800036B4FB /* Main.storyboard */; };
 		CA70503A25734E810036B4FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA70503925734E810036B4FB /* Assets.xcassets */; };
@@ -18,12 +17,14 @@
 		CA70504D25734EFF0036B4FB /* Resolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70504C25734EFF0036B4FB /* Resolver.swift */; };
 		CA70505025734F150036B4FB /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA70504F25734F150036B4FB /* Inject.swift */; };
 		CA705053257357400036B4FB /* DiContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA705052257357400036B4FB /* DiContainer.swift */; };
+		CA9160B525761E5300DA1829 /* CustomerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9160B425761E5300DA1829 /* CustomerViewModel.swift */; };
+		CA9160B825761F7C00DA1829 /* CoffeMakerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9160B725761F7C00DA1829 /* CoffeMakerCoordinator.swift */; };
+		CA9160BB2576204100DA1829 /* NextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9160BA2576204100DA1829 /* NextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA70502D25734E800036B4FB /* DiWithPropertyWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiWithPropertyWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA70503025734E800036B4FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CA70503225734E800036B4FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CA70503425734E800036B4FB /* CoffeeMakerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMakerViewController.swift; sourceTree = "<group>"; };
 		CA70503725734E800036B4FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA70503925734E810036B4FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +35,9 @@
 		CA70504C25734EFF0036B4FB /* Resolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolver.swift; sourceTree = "<group>"; };
 		CA70504F25734F150036B4FB /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
 		CA705052257357400036B4FB /* DiContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiContainer.swift; sourceTree = "<group>"; };
+		CA9160B425761E5300DA1829 /* CustomerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewModel.swift; sourceTree = "<group>"; };
+		CA9160B725761F7C00DA1829 /* CoffeMakerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeMakerCoordinator.swift; sourceTree = "<group>"; };
+		CA9160BA2576204100DA1829 /* NextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,16 +72,18 @@
 			children = (
 				CA70503025734E800036B4FB /* AppDelegate.swift */,
 				CA705052257357400036B4FB /* DiContainer.swift */,
-				CA70503225734E800036B4FB /* SceneDelegate.swift */,
 				CA70503425734E800036B4FB /* CoffeeMakerViewController.swift */,
 				CA70504525734E960036B4FB /* Components.swift */,
 				CA70504825734EDA0036B4FB /* CoffeeMakerViewModel.swift */,
+				CA9160B725761F7C00DA1829 /* CoffeMakerCoordinator.swift */,
+				CA9160B425761E5300DA1829 /* CustomerViewModel.swift */,
 				CA70504F25734F150036B4FB /* Inject.swift */,
 				CA70504C25734EFF0036B4FB /* Resolver.swift */,
 				CA70503625734E800036B4FB /* Main.storyboard */,
 				CA70503925734E810036B4FB /* Assets.xcassets */,
 				CA70503B25734E810036B4FB /* LaunchScreen.storyboard */,
 				CA70503E25734E810036B4FB /* Info.plist */,
+				CA9160BA2576204100DA1829 /* NextViewController.swift */,
 			);
 			path = DiWithPropertyWrapper;
 			sourceTree = "<group>";
@@ -153,12 +159,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA70505025734F150036B4FB /* Inject.swift in Sources */,
+				CA9160B825761F7C00DA1829 /* CoffeMakerCoordinator.swift in Sources */,
 				CA70503525734E800036B4FB /* CoffeeMakerViewController.swift in Sources */,
 				CA70504625734E960036B4FB /* Components.swift in Sources */,
 				CA70503125734E800036B4FB /* AppDelegate.swift in Sources */,
+				CA9160BB2576204100DA1829 /* NextViewController.swift in Sources */,
 				CA705053257357400036B4FB /* DiContainer.swift in Sources */,
+				CA9160B525761E5300DA1829 /* CustomerViewModel.swift in Sources */,
 				CA70504D25734EFF0036B4FB /* Resolver.swift in Sources */,
-				CA70503325734E800036B4FB /* SceneDelegate.swift in Sources */,
 				CA70504925734EDA0036B4FB /* CoffeeMakerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -291,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

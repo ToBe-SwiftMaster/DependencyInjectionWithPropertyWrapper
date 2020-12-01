@@ -1,16 +1,17 @@
 //
-//  CoffeeMakerViewModel.swift
+//  CustomerViewModel.swift
 //  DiWithPropertyWrapper
 //
-//  Created by devming on 2020/11/29.
+//  Created by devming on 2020/12/01.
 //
 
-protocol CoffeeMakerViewModelType: Dependency {
+import Foundation
+
+protocol CustomViewModelType: Dependency {
     func fetch(completion: (Int) -> Void)
 }
 
-
-class CoffeeMakerViewModel: CoffeeMakerViewModelType {
+class CustomerViewModel: CustomViewModelType {
     @Inject var heater: ElectricHeater
     @Inject var pump: Pump
     @Inject var apiService: CustomerApiService
