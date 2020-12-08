@@ -29,6 +29,11 @@ struct Pump: Component {
 }
 
 struct ElectricHeater: Component {
+    var num: Int
+    init(num: Int) {
+        self.num = num
+    }
+    
     func serve() {
         heat()
     }
